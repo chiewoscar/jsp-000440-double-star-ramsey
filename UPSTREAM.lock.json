@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "problem_id": "JSP-000440",
+  "erdos_problem": 549,
+  "created_date": "2026-09-17",
+  "upstream": {
+    "repository": "https://github.com/plby/lean-proofs.git",
+    "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+    "workspace": "src/latest",
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "source_files": [
+      {
+        "path": "Util/Ramsey.lean",
+        "sha256": "c1269d71fcd105835310b53e87a588fcb5628f87a76c9f16d7a007697f77b82a"
+      },
+      {
+        "path": "ErdosProblems/Erdos549.lean",
+        "sha256": "0d6831c50e948a5cf892db6594591dc424b7eee164bd622ed557d98a8abbd2d7"
+      }
+    ],
+    "target_module": "ErdosProblems.Erdos549",
+    "theorems": [
+      "Erdos549.not_erdos_549"
+    ],
+    "comparator_path": "ComparatorChallenges/ErdosProblems/Erdos549.json",
+    "comparator": {
+      "enable_nanoda": true,
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem_names": [
+        "Erdos549.not_erdos_549"
+      ]
+    }
+  },
+  "local": {
+    "wrapper": "JSP000440.lean",
+    "module": "JSP000440",
+    "theorems": [
+      "JSP000440.solution",
+      "JSP000440.witness_is_tree",
+      "JSP000440.witness_bipartition"
+    ]
+  },
+  "verification": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "prohibited_local_constructs": [
+      "sorry",
+      "admit",
+      "axiom declarations",
+      "native_decide",
+      "unsafe",
+      "implemented_by",
+      "Lean.ofReduceBool"
+    ]
+  }
+}
