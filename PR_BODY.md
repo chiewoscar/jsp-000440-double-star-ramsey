@@ -22,7 +22,7 @@ Replace the placeholders after publishing this package:
   {
     "repository": "https://github.com/chiewoscar/jsp-000440-double-star-ramsey",
     "branch": "main",
-    "commit": "FULL_40_CHARACTER_COMMIT_SHA"
+    "commit": "bacb508403412e0cd8bc4d5ba5e52bf0b9c2c3be"
   },
   {
     "repository": "https://github.com/plby/lean-proofs",
